@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+
   "scripts": {
-    "postinstall": "prisma generate",
-    "build": "prisma generate && tsc",
-    "start": "node dist/server.js"
-  },
+  "start": "tsx server.ts",
+  "server": "nodemon --exec tsx server.ts",
+  "build": "prisma generate && tsc",
+  "postinstall": "prisma generate"
+},
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
